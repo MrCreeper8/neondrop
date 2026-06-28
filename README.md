@@ -1,8 +1,8 @@
-# NeonDrop Downloader
+# NeonDrop
 
 NeonDrop is a small Windows desktop app for downloading videos through `yt-dlp`.
 
-It provides a bright native UI where you paste a link, choose a mode, and download. Video modes try to save/remux as MP4 when FFmpeg is available. Audio mode downloads MP3.
+Paste a link, choose a mode, and download. Video modes try to save/remux as MP4 when FFmpeg is available. Audio mode downloads MP3.
 
 ## What It Uses
 
