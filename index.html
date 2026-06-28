@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NeonDrop Downloader</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="stage" aria-label="Video downloader">
+        <div class="burst burst-a"></div>
+        <div class="burst burst-b"></div>
+        <div class="ticker" aria-hidden="true">
+          <span>PASTE LINK</span><span>DOWNLOAD</span><span>OWNED OR PERMITTED MEDIA</span><span>NEONDROP</span>
+        </div>
+
+        <div class="masthead">
+          <p class="kicker">Local video capture engine</p>
+          <h1>NeonDrop</h1>
+          <div class="impact-word" aria-hidden="true">DROP</div>
+        </div>
+
+        <form id="downloadForm" class="control-panel">
+          <label class="url-wrap">
+            <span>Link</span>
+            <input id="urlInput" type="url" placeholder="https://www.youtube.com/watch?v=..." required />
+          </label>
+
+          <div class="switchboard" role="group" aria-label="Download mode">
+            <label>
+              <input type="radio" name="quality" value="best" checked />
+              <span>Max</span>
+            </label>
+            <label>
+              <input type="radio" name="quality" value="small" />
+              <span>Lean</span>
+            </label>
+            <label>
+              <input type="radio" name="quality" value="audio" />
+              <span>MP3</span>
+            </label>
+          </div>
+
+          <button class="fire-button" type="submit">
+            <span>Download</span>
+            <i aria-hidden="true"></i>
+          </button>
+        </form>
+
+        <section class="readout" aria-live="polite">
+          <div class="meter">
+            <div id="bar"></div>
+          </div>
+          <div class="status-row">
+            <strong id="state">Ready</strong>
+            <span id="folder">Checking engine...</span>
+          </div>
+          <pre id="log">Paste a link you own or have permission to download.</pre>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
